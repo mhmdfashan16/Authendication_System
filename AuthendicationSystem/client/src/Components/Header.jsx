@@ -18,7 +18,7 @@ const Header = () => {
     <p
     className='mb-8 max-w-md'
     >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem consectetur vel eaque omnis itaque iure, neque dolorem unde quos ipsum es</p>
-    <button className='border border-gray-500 rounded-full px-8 py-2.5 hover:bg-gray-100 transition-all'>Get Started</button>
+    <button className='border border-gray-500 rounded-full px-8 py-2.5 hover:bg-gray-100 transition-all cursor-pointer'>Get Started</button>
     </div>
   )
 }
