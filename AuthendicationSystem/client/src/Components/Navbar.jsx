@@ -55,26 +55,27 @@ const Navbar = () => {
               className='absolute left-5 w-8 h-15 sm:left-20 top-5 w-13 sm:w-15 cursor-pointer' 
               />
               <h1 className='flex absolute top-7 left-33 text-4xl font-bold text-indigo-900'>-auth</h1>
-                </div>
+        </div>
       
 
     {userData ?
     <div
-    className='w-9 h-9 flex justify-center items-center rounded-full bg-black text-white relative group text-xl'
+    className='w-12 h-12 border-2 border-white flex justify-center items-center rounded-full bg-black text-white relative group text-xl'
     >
         {userData.name[0].toUpperCase()}
         <div
-        className='absolute hidden group-hover:block top-0 right-0 z-10 text-black rounded pt-10'
+        className='absolute hidden group-hover:block top-3 right-0 z-10 text-black rounded pt-10'
 
         >
             <ul
-            className='list-none m-0 p-2 bg-gray-100 text-sm'
+            className='list-none rounded-2xl m-0 p-2 bg-gradient-to-r from-indigo-700 to-black text-white text-sm'
             >
-                {!userData.isAccountVerified && <li onClick={sendVerificationOtp} 
-                className='py-1 px-2 hover:bg-gray-200 cursor-pointer'
+                {!userData.isAccountVerified && 
+                <li onClick={sendVerificationOtp} 
+                className='py-1 px-2 hover:bg-gray-400 rounded-xl cursor-pointer'
                 >Verify email</li>}
                 
-                <li onClick={logout} className='py-1 px-2 hover:bg-gray-200 cursor-pointer pr-10'>Logout</li>
+                <li onClick={logout} className='py-1 px-2 rounded-xl hover:bg-gray-400 cursor-pointer pr-10'>Logout</li>
             </ul>
            
         </div>

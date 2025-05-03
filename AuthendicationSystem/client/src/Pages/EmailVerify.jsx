@@ -62,8 +62,14 @@ const EmailVerify = () => {
 
   return (
     <div 
-    className='flex items-center justify-center min-h-screen bg-gradient-to-br from-blue-200 to-purple-400'>
-      <img onClick={()=>{'/'}} src={assets.logo} alt="" className='absolute left-5 sm:left-20 top-5 w-28 sm:w-32 cursor-pointer' />
+    className='flex items-center justify-center min-h-screen bg-gradient-to-br from-blue-400 to-indigo-950'>
+      {/* <img onClick={()=>{'/'}} src={assets.logo} alt="" className='absolute left-5 sm:left-20 top-5 w-28 sm:w-32 cursor-pointer' /> */}
+      <div onClick={()=>navigate('/')}  className='flex cursor-pointer'>
+                      <img src={assets.f_logo} alt=""
+                    className='absolute left-5 w-8 h-15 sm:left-20 top-5 w-13 sm:w-15 cursor-pointer' 
+                    />
+                    <h1 className='flex absolute top-7 left-33 text-4xl font-bold text-indigo-900'>-auth</h1>
+      </div>
       <form 
       onSubmit={onSubmitHandler}
       className='bg-slate-900 p-8 rounded-lg shadow-lg w-96 text-sm'
