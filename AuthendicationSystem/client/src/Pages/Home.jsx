@@ -5,7 +5,7 @@ import Header from '../Components/Header'
 
 const Home = () => {
   return (
-    <div className='flex flex-col items-center bg-gradient-to-b from-black-500 to-gray-700 bg-[url("/bg_img.png")] justify-center  min-h-screen  bg-cover bg-center'>
+    <div className='flex flex-col items-center bg-[url("/bg_img_new.png")] h-screen w-full text-black  min-h-screen  bg-cover bg-center'>
      <Navbar/>
      <Header/>
     </div>

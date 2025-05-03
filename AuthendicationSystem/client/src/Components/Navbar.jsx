@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import assets from '../assets/assets.js'
-import { useNavigate } from 'react-router-dom'
+
 import { AppContent } from '../Context/AppContext.jsx';
 import axios from 'axios';
 import { toast } from 'react-toastify';
@@ -8,9 +8,9 @@ import { toast } from 'react-toastify';
 
 const Navbar = () => {
 
-    const navigate = useNavigate();
-
-    const {userData, backendUrl, setUserData, setIsLoggedIn} = useContext(AppContent);
+    
+   
+    const {userData, backendUrl, setUserData, setIsLoggedIn, navigate} = useContext(AppContent);
 
     const sendVerificationOtp = async ()=>{
         try{
@@ -43,9 +43,20 @@ const Navbar = () => {
 
   return (
     <div className='w-full flex justify-between items-center p-4 sm:p-6 sm:px-24 absolute top-0'>
-      <img 
-      onClick={()=>navigate('/')}
-      src={assets.logo} alt="" className='w-28 sm:w-32'/>
+        {/* <div className='flex gap-5'>
+            <img 
+            onClick={()=>navigate('/')}
+            src={assets.f_logo} alt="" className='h-10  sm:w-12 absolute top-9'/>
+            <h1 className='text-3xl font-bold items-start gap-0 text-blue-950 absolute top-10 left-35'>auth</h1>
+
+        </div> */}
+         <div onClick={()=>navigate('/')}  className='flex cursor-pointer'>
+                <img src={assets.f_logo} alt=""
+              className='absolute left-5 w-8 h-15 sm:left-20 top-5 w-13 sm:w-15 cursor-pointer' 
+              />
+              <h1 className='flex absolute top-7 left-33 text-4xl font-bold text-indigo-900'>-auth</h1>
+                </div>
+      
 
     {userData ?
     <div
@@ -71,11 +82,11 @@ const Navbar = () => {
     </div>
     :
     <button onClick={()=>navigate('/login')}
-    className='flex item-center gap-2 border border-gray-500 rounded-full px-6 py-2 hover:bg-gray-100 transition-all cursor-pointer'><img src={assets.arrow_icon} alt=""
+    className='flex item-center gap-2 border-2 border-white text-white font-bold bg-gradient-to-l from-indigo-900 to-blue-700 rounded-full px-6 py-2 hover:bg-gray-100 hover:text-black transition-all cursor-pointer'><img src={assets.arrow_icon} alt=""
     
-    /> Login</button>
+    />Login</button>
 
-}
+}   
 
       
     </div>
