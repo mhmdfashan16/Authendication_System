@@ -83,9 +83,8 @@ const Navbar = () => {
     </div>
     :
     <button onClick={()=>navigate('/login')}
-    className='flex item-center gap-2 border-2 border-white text-white font-bold bg-gradient-to-l from-indigo-900 to-blue-700 rounded-full px-6 py-2 hover:bg-gray-100 hover:text-black transition-all cursor-pointer'><img src={assets.arrow_icon} alt=""
-    
-    />Login</button>
+    className='flex item-center gap-2 border-2 border-white text-white font-bold bg-gradient-to-l from-indigo-900 to-blue-700 rounded-full px-6 py-2 hover:bg-gray-100 hover:text-black transition-all cursor-pointer'>
+    Login</button>
 
 }   
 
