@@ -71,11 +71,10 @@ const ResetPassword = () => {
   }
 
   return (
-    <div className='flex items-center justify-center min-h-screen bg-gradient-to-br from-blue-200 to-purple-4000='>
-      <img 
-      onClick={()=>navigate('/')}
-      className='absolute left-5 sm:left-20 top-5 w-28 sm:w-32 cursor-pointer'
-      src={assets.logo} alt="" />
+    <div className='flex items-center justify-center min-h-screen bg-black'>
+        <img src={assets.fastAuth} alt=""
+                    className='absolute left-5 w-40  sm:left-20 top-5 sm:w-45 cursor-pointer' 
+        />
 
       {/* //enter email.id */}
       {!isEmailSent &&
@@ -98,7 +97,7 @@ const ResetPassword = () => {
           value={email} onChange={e=>{setEmail(e.target.value)}} required/>
         </div>
         <button
-        className='w-full py-2.5 bg-gradient-to-r from-indigo-500 to-indigo-900 text-white rounded-full mt-3'
+        className='w-full py-2.5 bg-indigo-900 text-white rounded-full mt-3'
         >Submit</button>
       </form>
 }

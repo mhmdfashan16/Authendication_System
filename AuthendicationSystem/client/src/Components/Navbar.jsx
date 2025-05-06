@@ -68,14 +68,14 @@ const Navbar = () => {
 
         >
             <ul
-            className='list-none rounded-2xl m-0 p-2 bg-gradient-to-r from-indigo-700 to-black text-white text-sm'
+            className='list-none rounded-2xl m-0 p-2 bg-white text-black text-sm'
             >
                 {!userData.isAccountVerified && 
                 <li onClick={sendVerificationOtp} 
                 className='py-1 px-2 hover:bg-gray-400 rounded-xl cursor-pointer'
                 >Verify email</li>}
                 
-                <li onClick={logout} className='py-1 px-2 rounded-xl hover:bg-gray-400 cursor-pointer pr-10'>Logout</li>
+                <li onClick={logout} className='py-1 px-2 rounded-xl cursor-pointer pr-10'>Logout</li>
             </ul>
            
         </div>
