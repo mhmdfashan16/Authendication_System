@@ -56,13 +56,13 @@ const Login = () => {
 
   return (
     <div
-    className='flex items-center justify-center min-h-screen px-6 sm:px-0 bg-gradient-to-br from-blue-200 to-indigo-950'
+    className='flex items-center justify-center min-h-screen px-6 sm:px-0  bg-black '
     >
         <div onClick={()=>navigate('/')} className='flex cursor-pointer'>
-        <img  src={assets.f_logo} alt=""
-      className='absolute left-5 w-8 h-15 sm:left-20 top-5 w-13 sm:w-15 cursor-pointer' 
-      />
-      <h1 className='flex absolute top-7 left-33 text-4xl font-bold text-indigo-900'>-auth</h1>
+         <img src={assets.fastAuth} alt=""
+                      className='absolute left-5 w-40  sm:left-20 top-5 sm:w-45 cursor-pointer' 
+        />
+      
         </div>
       
       <div
@@ -72,7 +72,7 @@ const Login = () => {
         className='text-3xl font-semibold text-white text-center mb-3'
         >{state === 'Sign Up'?'Create Account':'Login'}</h2>
         <p
-        className='text-center text-sm mb-6 '
+        className='text-center text-sm mb-6 text-indigo-200'
         >{state === 'Sign Up'?'Create Your Account':'Login Your Account'}</p>
 
 
@@ -112,11 +112,11 @@ const Login = () => {
             </div>
 
             <p
-            className='mb-5 text-indigo-500 cursor-pointer '
+            className='mb-5 text-indigo-300 cursor-pointer '
             onClick={()=>navigate('/reset-password')}
             >Forgot Password</p>
             <button onClick={onSubmitHandler}
-            className='w-full py-2.5 rounded-full bg-gradient-to-r from-indigo-500 to-indigo-900 text-white font-medium'
+            className='w-full py-2.5 rounded-full bg-gradient-to-r from-indigo-950 to-indigo-900 text-white font-medium'
             >{state}</button>
         </form>
         

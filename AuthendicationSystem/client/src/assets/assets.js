@@ -7,6 +7,8 @@ import hand_wave from './hand_wave.png'
 import header_img from './header_img.png'
 import user_logo from './user_logo.png'
 import f_logo from './f_logo_auth.png'
+import fastAuth from './fastAuth_logo.png'
+
 export const assets = {
     arrow_icon,
     lock_icon,
@@ -16,7 +18,8 @@ export const assets = {
     hand_wave,
     header_img,
     user_logo,
-    f_logo
+    f_logo,
+    fastAuth
 }
 
 export default assets;
