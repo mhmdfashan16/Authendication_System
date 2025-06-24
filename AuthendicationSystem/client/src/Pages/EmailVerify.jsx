@@ -62,13 +62,12 @@ const EmailVerify = () => {
 
   return (
     <div 
-    className='flex items-center justify-center min-h-screen bg-gradient-to-br from-blue-400 to-indigo-950'>
+    className='flex items-center justify-center min-h-screen bg-black'>
       {/* <img onClick={()=>{'/'}} src={assets.logo} alt="" className='absolute left-5 sm:left-20 top-5 w-28 sm:w-32 cursor-pointer' /> */}
       <div onClick={()=>navigate('/')}  className='flex cursor-pointer'>
-                      <img src={assets.f_logo} alt=""
-                    className='absolute left-5 h-15 sm:left-20 top-5 w-13 sm:w-15 cursor-pointer' 
-                    />
-                    <h1 className='flex absolute top-7 left-33 text-4xl font-bold text-indigo-900'>-auth</h1>
+          <img src={assets.fastAuth} alt=""
+              className='absolute left-5 w-40  sm:left-20 top-5 sm:w-45 cursor-pointer' 
+          />
       </div>
       <form 
       onSubmit={onSubmitHandler}
@@ -88,7 +87,7 @@ const EmailVerify = () => {
           ))}
         </div>
         <button 
-        className='w-full py-3 bg-gradient-to-r from-indigo-500 to-indigo-900 rounded-full'
+        className='w-full py-3 bg-indigo-950 text-white rounded-full'
         >Verify Email</button>
       </form>
     </div>

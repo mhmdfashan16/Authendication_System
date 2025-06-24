@@ -72,10 +72,10 @@ const Navbar = () => {
             >
                 {!userData.isAccountVerified && 
                 <li onClick={sendVerificationOtp} 
-                className='py-1 px-2 hover:bg-gray-400 rounded-xl cursor-pointer'
+                className='py-1 px-2 hover:bg-black hover:text-white rounded-xl cursor-pointer'
                 >Verify email</li>}
                 
-                <li onClick={logout} className='py-1 px-2 rounded-xl cursor-pointer pr-10'>Logout</li>
+                <li onClick={logout} className='py-1 px-2 rounded-xl hover:bg-black hover:text-white cursor-pointer pr-10'>Logout</li>
             </ul>
            
         </div>
